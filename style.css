@@ -153,3 +153,15 @@
   .col-3 >div:nth-child(1){
     width: 100%;
   }
+
+  .checkbox-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  .checkbox-wrapper input{
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    border-radius: 10px;
+  
+  }
