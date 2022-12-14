@@ -19,7 +19,7 @@
             <p>O primeiro passo é preencher esse formulario.</p>
         </header>
     
-        <form action=""> <!--Aqui inicia o corpo do formulario-->
+        <form id="my-form"> <!--Aqui inicia o corpo do formulario-->
 
             <fieldset>
                 <div class="fieldset-wrapper">
@@ -28,7 +28,7 @@
     
                     <div class="input-wrapper">
                         <label for="event-title">Titulo do evento <span>(minino 8 caracteres)</span></label>
-                        <input type="text" id="event-title"/>
+                        <input type="text" id="event-title" required minlength="8"/>
                     </div>
     
                     <div class="input-wrapper">
@@ -64,12 +64,12 @@
 
                     <div class="input-wrapper">
                         <label for="event-email">E-mail do Administrador <span>(digite um email válido)</span></label>
-                        <input type="email" id="event-email"/>
+                        <input type="email" id="event-email" required/>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="event-password">Senha de acesso para participantes <span>(minino 8 caracteres)</span></label>
-                        <input type="password" id="event-password"/>
+                        <input type="password" id="event-password" required minlength="8"/>
                     </div>
 
                     <div class="checkbox-wrapper">
@@ -109,8 +109,12 @@
                 </div>   
                 
             </fieldset>
-    
+
         </form>
+
+        <footer id="my-form">
+            <input type="submit" class="buttons" value="Salvar evento" form="my-form">
+        </footer>
 
     </div>
 

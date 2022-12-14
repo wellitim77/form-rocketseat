@@ -55,7 +55,7 @@
   form {
     margin-top: 38px;
     background: #FAFAFC;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     min-height: 300px;
   
     padding: 64px;
@@ -164,4 +164,39 @@
     margin-right: 16px;
     border-radius: 10px;
   
+  }
+
+  footer{
+    background: #F0F0F4;
+    height: 136px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 64px;
+    margin-bottom: 100px;
+    border-top: 1px solid #E6E6F0;
+    border-radius: 0 0 8px 8px;
+  }
+
+  footer .buttons{
+    background: #04D361;
+    height: 56px;
+    border-radius: 8px;
+    font-family: 'Archivo';
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    color: #FAFAFC;
+  }
+
+  footer .buttons:hover{
+    background: #08b656;
+    transition: .3s;
+  }
+
+  input:invalid{
+    border: 1px solid #FF1010;
   }
